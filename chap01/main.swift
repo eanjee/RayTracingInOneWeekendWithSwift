@@ -11,13 +11,13 @@ import Foundation
 let buffer = makeBuffer(width: 200, height: 100)
 
 for y in 0...buffer.height - 1 {
-	for x in 0...buffer.width - 1 {
-		let r = Double(x) / Double(buffer.width)
-		let g = Double(y) / Double(buffer.height)
-		let b = 0.2
-		
-		buffer.setColor(x: x, y: y, red: r, green: g, blue: b)
-	}
+    for x in 0...buffer.width - 1 {
+        let r = Double(x) / Double(buffer.width)
+        let g = Double(y) / Double(buffer.height)
+        let b = 0.2
+        
+        buffer.setColor(x: x, y: y, red: r, green: g, blue: b)
+    }
 }
 
 savePNG(name: "chap01.png", buffer: buffer)
