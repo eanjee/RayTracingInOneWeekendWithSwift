@@ -62,6 +62,22 @@ struct Vec3 {
     }
     
     // scalar arithmetic
+    static func + (left: Vec3, right: Double) -> Vec3 {
+        return Vec3(left.x + right, left.y + right, left.z + right)
+    }
+    
+    static func + (left: Double, right: Vec3) -> Vec3 {
+        return Vec3(left + right.x, left + right.y, left + right.z)
+    }
+    
+    static func - (left: Vec3, right: Double) -> Vec3 {
+        return Vec3(left.x - right, left.y - right, left.z - right)
+    }
+    
+    static func - (left: Double, right: Vec3) -> Vec3 {
+        return Vec3(left - right.x, left - right.y, left - right.z)
+    }
+    
     static func * (left: Vec3, right: Double) -> Vec3 {
         return Vec3(left.x * right, left.y * right, left.z * right)
     }
