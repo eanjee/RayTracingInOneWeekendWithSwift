@@ -125,5 +125,9 @@ struct Vec3 {
         e2 *= k
     }
     
+    func normalized() -> Vec3 {
+        return self / length()
+    }
+    
     var e0, e1, e2: Double
 }
