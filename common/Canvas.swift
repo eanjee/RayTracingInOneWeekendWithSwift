@@ -31,7 +31,6 @@ class Canvas {
     
     deinit {
         raw.deallocate()
-        print("deinit")
     }
     
     func setColor(x: Int, y: Int, red: Double, green: Double, blue: Double) {
@@ -41,6 +40,10 @@ class Canvas {
         data[index + 0] = UInt8(255.99 * red)
         data[index + 1] = UInt8(255.99 * green)
         data[index + 2] = UInt8(255.99 * blue)
+    }
+    
+    func setColor(x: Int, y: Int, color: Vec3) {
+        setColor(x: x, y: y, red: color.r, green: color.g, blue: color.b)
     }
     
     func savePNG(name: String) {
