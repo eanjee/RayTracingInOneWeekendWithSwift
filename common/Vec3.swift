@@ -100,11 +100,11 @@ struct Vec3 {
     }
     
     // geometry
-    static func dot(left: Vec3, right: Vec3) -> Double {
+    static func dot(_ left: Vec3, _ right: Vec3) -> Double {
         return  left.x * right.x + left.y * right.y + left.z * right.z
     }
     
-    static func cross(left: Vec3, right: Vec3) -> Vec3 {
+    static func cross(_ left: Vec3, _ right: Vec3) -> Vec3 {
         return Vec3(left.y * right.z - left.z * right.y,
                     left.z * right.x - left.x * right.z,
                     left.x * right.y - left.y * right.x)
