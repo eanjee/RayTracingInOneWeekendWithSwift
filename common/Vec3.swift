@@ -135,6 +135,10 @@ struct Vec3 {
         return p
     }
     
+    static func reflect(v: Vec3, n: Vec3) -> Vec3 {
+        return v - 2 * Vec3.dot(v, n) * n
+    }
+    
     func lengthSquared() -> Double {
         return x * x + y * y + z * z
     }
