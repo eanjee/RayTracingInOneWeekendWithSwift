@@ -126,6 +126,15 @@ struct Vec3 {
                     left.x * right.y - left.y * right.x)
     }
     
+    static func randomInUnitSphere() -> Vec3 {
+        var p: Vec3
+        repeat {
+            p = 2.0 * Vec3(drand48(), drand48(), drand48()) - Vec3(1.0, 1.0, 1.0)
+        } while p.lengthSquared() >= 1.0
+        
+        return p
+    }
+    
     func lengthSquared() -> Double {
         return x * x + y * y + z * z
     }

@@ -17,6 +17,7 @@ struct HitRecord {
     var t: Double
     var p: Vec3
     var normal: Vec3
+    var material: Material?
 }
 
 protocol Hitable {
@@ -24,6 +25,17 @@ protocol Hitable {
 }
 
 struct Sphere: Hitable {
+    init(center: Vec3, radius: Double) {
+        self.center = center
+        self.radius = radius
+    }
+    
+    init(center: Vec3, radius: Double, material: Material) {
+        self.center = center
+        self.radius = radius
+        self.material = material
+    }
+    
     // sphere equation, center at C: (cx, cy, cz), radius: R
     // (x - cx) * (x - cx) + (y - cy) * (y - cy) + (z - cz) * (z - cz) = R * R
     // that is, for point P
@@ -51,6 +63,7 @@ struct Sphere: Hitable {
                 rec.t = temp
                 rec.p = r.pointAt(t: temp)
                 rec.normal = (rec.p - center) / radius
+                rec.material = material
                 
                 return true
             }
@@ -60,6 +73,7 @@ struct Sphere: Hitable {
                 rec.t = temp
                 rec.p = r.pointAt(t: temp)
                 rec.normal = (rec.p - center) / radius
+                rec.material = material
                 
                 return true
             }
@@ -70,6 +84,7 @@ struct Sphere: Hitable {
     
     var center: Vec3
     var radius: Double
+    var material: Material?
 }
 
 struct HitableList: Hitable {
