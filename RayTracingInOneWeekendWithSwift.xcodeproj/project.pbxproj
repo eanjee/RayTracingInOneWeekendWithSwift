@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		300ECC8120CBD66C00E1188D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300ECC8020CBD66C00E1188D /* main.swift */; };
+		3012980C20D606810092BDA9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012980B20D606810092BDA9 /* main.swift */; };
+		3012981020D606880092BDA9 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B6DD520CD558700A51F42 /* Canvas.swift */; };
+		3012981120D606880092BDA9 /* Vec3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B6DD720CD657F00A51F42 /* Vec3.swift */; };
+		3012981220D606880092BDA9 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054A4BD20CE182100B60C19 /* Ray.swift */; };
+		3012981320D606880092BDA9 /* Hitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054A4E920CE524E00B60C19 /* Hitable.swift */; };
+		3012981420D606880092BDA9 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054A4FA20CE7A9500B60C19 /* Camera.swift */; };
+		3012981520D606880092BDA9 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012980420D605CA0092BDA9 /* Material.swift */; };
+		3012981620D60A570092BDA9 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012980420D605CA0092BDA9 /* Material.swift */; };
+		3012981720D60BF50092BDA9 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012980420D605CA0092BDA9 /* Material.swift */; };
+		3012981820D60BFF0092BDA9 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012980420D605CA0092BDA9 /* Material.swift */; };
 		3054A4C520CE189000B60C19 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054A4C420CE189000B60C19 /* main.swift */; };
 		3054A4C920CE189900B60C19 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B6DD520CD558700A51F42 /* Canvas.swift */; };
 		3054A4CA20CE189900B60C19 /* Vec3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B6DD720CD657F00A51F42 /* Vec3.swift */; };
@@ -42,6 +52,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		300ECC7C20CBD66C00E1188D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3012980720D606810092BDA9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -109,6 +128,9 @@
 /* Begin PBXFileReference section */
 		300ECC7E20CBD66C00E1188D /* chap01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chap01; sourceTree = BUILT_PRODUCTS_DIR; };
 		300ECC8020CBD66C00E1188D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3012980420D605CA0092BDA9 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		3012980920D606810092BDA9 /* chap08 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chap08; sourceTree = BUILT_PRODUCTS_DIR; };
+		3012980B20D606810092BDA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3054A4BD20CE182100B60C19 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
 		3054A4C220CE189000B60C19 /* chap03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chap03; sourceTree = BUILT_PRODUCTS_DIR; };
 		3054A4C420CE189000B60C19 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -130,6 +152,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		300ECC7B20CBD66C00E1188D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3012980620D606810092BDA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,6 +221,7 @@
 				3054A4E020CE51D500B60C19 /* chap05 */,
 				3054A4F020CE7A6400B60C19 /* chap06 */,
 				30CCB68420D3691300594AD4 /* chap07 */,
+				3012980A20D606810092BDA9 /* chap08 */,
 				300ECC7120CBD5E800E1188D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,6 +236,7 @@
 				3054A4DF20CE51D500B60C19 /* chap05 */,
 				3054A4EF20CE7A6400B60C19 /* chap06 */,
 				30CCB68320D3691300594AD4 /* chap07 */,
+				3012980920D606810092BDA9 /* chap08 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,8 +257,17 @@
 				3054A4BD20CE182100B60C19 /* Ray.swift */,
 				3054A4E920CE524E00B60C19 /* Hitable.swift */,
 				3054A4FA20CE7A9500B60C19 /* Camera.swift */,
+				3012980420D605CA0092BDA9 /* Material.swift */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		3012980A20D606810092BDA9 /* chap08 */ = {
+			isa = PBXGroup;
+			children = (
+				3012980B20D606810092BDA9 /* main.swift */,
+			);
+			path = chap08;
 			sourceTree = "<group>";
 		};
 		3054A4C320CE189000B60C19 /* chap03 */ = {
@@ -296,6 +336,23 @@
 			name = chap01;
 			productName = chap01;
 			productReference = 300ECC7E20CBD66C00E1188D /* chap01 */;
+			productType = "com.apple.product-type.tool";
+		};
+		3012980820D606810092BDA9 /* chap08 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3012980D20D606810092BDA9 /* Build configuration list for PBXNativeTarget "chap08" */;
+			buildPhases = (
+				3012980520D606810092BDA9 /* Sources */,
+				3012980620D606810092BDA9 /* Frameworks */,
+				3012980720D606810092BDA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chap08;
+			productName = chap08;
+			productReference = 3012980920D606810092BDA9 /* chap08 */;
 			productType = "com.apple.product-type.tool";
 		};
 		3054A4C120CE189000B60C19 /* chap03 */ = {
@@ -413,6 +470,9 @@
 					300ECC7D20CBD66C00E1188D = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					3012980820D606810092BDA9 = {
+						CreatedOnToolsVersion = 9.4;
+					};
 					3054A4C120CE189000B60C19 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -452,6 +512,7 @@
 				3054A4DE20CE51D500B60C19 /* chap05 */,
 				3054A4EE20CE7A6400B60C19 /* chap06 */,
 				30CCB68220D3691300594AD4 /* chap07 */,
+				3012980820D606810092BDA9 /* chap08 */,
 			);
 		};
 /* End PBXProject section */
@@ -464,6 +525,20 @@
 				3054A4CC20CE1B7E00B60C19 /* Vec3.swift in Sources */,
 				305B6DD620CD560000A51F42 /* Canvas.swift in Sources */,
 				300ECC8120CBD66C00E1188D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3012980520D606810092BDA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3012981020D606880092BDA9 /* Canvas.swift in Sources */,
+				3012981120D606880092BDA9 /* Vec3.swift in Sources */,
+				3012981220D606880092BDA9 /* Ray.swift in Sources */,
+				3012981320D606880092BDA9 /* Hitable.swift in Sources */,
+				3012981420D606880092BDA9 /* Camera.swift in Sources */,
+				3012981520D606880092BDA9 /* Material.swift in Sources */,
+				3012980C20D606810092BDA9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3012981820D60BFF0092BDA9 /* Material.swift in Sources */,
 				3054A4EA20CE528D00B60C19 /* Hitable.swift in Sources */,
 				3054A4E620CE520800B60C19 /* Canvas.swift in Sources */,
 				3054A4E720CE520800B60C19 /* Vec3.swift in Sources */,
@@ -505,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3012981720D60BF50092BDA9 /* Material.swift in Sources */,
 				3054A4FB20CE7AA900B60C19 /* Camera.swift in Sources */,
 				3054A4F620CE7A7800B60C19 /* Canvas.swift in Sources */,
 				3054A4F720CE7A7800B60C19 /* Vec3.swift in Sources */,
@@ -528,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3012981620D60A570092BDA9 /* Material.swift in Sources */,
 				30CCB68A20D3692D00594AD4 /* Canvas.swift in Sources */,
 				30CCB68B20D3692D00594AD4 /* Vec3.swift in Sources */,
 				30CCB68C20D3692D00594AD4 /* Ray.swift in Sources */,
@@ -671,6 +749,24 @@
 			};
 			name = Release;
 		};
+		3012980E20D606810092BDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3012980F20D606810092BDA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		3054A4C720CE189000B60C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -796,6 +892,15 @@
 			buildConfigurations = (
 				300ECC8320CBD66C00E1188D /* Debug */,
 				300ECC8420CBD66C00E1188D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3012980D20D606810092BDA9 /* Build configuration list for PBXNativeTarget "chap08" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3012980E20D606810092BDA9 /* Debug */,
+				3012980F20D606810092BDA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
