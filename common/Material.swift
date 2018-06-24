@@ -54,6 +54,7 @@ struct Dielectric: Material {
             refracted = niOverNt * (uv - n * dt) - n * sqrt(discriminant)
             return true
         } else {
+            // no real solution to Snell’s law and thus there is no refraction possible
             return false
         }
     }
@@ -90,6 +91,7 @@ struct Dielectric: Material {
                    refracted: &refracted) {
             reflectProb = schlick(cosine: cosine, refractionIndex: refractionIndex)
         } else {
+            // total interal reflection
             reflectProb = 1.0
         }
         
